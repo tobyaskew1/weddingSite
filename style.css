@@ -1,5 +1,17 @@
+h2, h3 {
+    color: #3A5A40;
+    font-family: Dancing Script;
+    font-weight: bolder;
+}
+p {
+    font-family: Protest Riot;
+}
 #maps {
     background-color: #DAD7CD;
     width: 100%;
+    height: auto;
+}
+#leaves {
+    width: 50%;
     height: auto;
 }
