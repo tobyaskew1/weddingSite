@@ -1,3 +1,6 @@
+body{
+    background-color: #3A5A40;
+}
 h2, h3 {
     color: #3A5A40;
     font-family: Dancing Script;
@@ -14,4 +17,16 @@ p {
 #leaves {
     width: 50%;
     height: auto;
+}
+#invite{
+    background-color: #DAD7CD;
+}
+#location{
+    background-color: #DAD7CD;
+}
+#rsvp{
+    background-color: #DAD7CD;
+}
+#thanks{
+    background-color: #DAD7CD;
 }
