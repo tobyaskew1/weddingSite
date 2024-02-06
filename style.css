@@ -9,6 +9,12 @@ h2, h3 {
 p {
     font-family: Protest Riot;
 }
+#navbar{
+    background-color: #3A5A40;
+}
+#mainPage{
+    background-color: #DAD7CD;
+}
 #maps {
     background-color: #DAD7CD;
     width: 100%;
@@ -19,14 +25,32 @@ p {
     height: auto;
 }
 #invite{
-    background-color: #DAD7CD;
+    position: relative;
+    overflow: hidden;
+}
+#pic{
+    height: auto;
+    width: 100%;
+}
+#overlayText{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #3A5A40;
+    font-size: 5rem;
+    z-index: 1;
+    -webkit-text-stroke: 2px #DAD7CD;
 }
 #location{
-    background-color: #DAD7CD;
+
 }
 #rsvp{
-    background-color: #DAD7CD;
+
 }
 #thanks{
-    background-color: #DAD7CD;
+
+}
+#treePic{
+    border-radius: 50%;
+    height: auto;
+    width: 50%;
 }
