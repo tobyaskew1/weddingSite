@@ -31,14 +31,19 @@ p {
 #pic{
     height: auto;
     width: 100%;
+    border-radius: 20%;
 }
 #overlayText{
+    font-size: 4rem;
+    color: #3A5A40;
+    /*
     position: absolute;
     transform: translate(-50%, -50%);
     color: #3A5A40;
     font-size: 5rem;
     z-index: 1;
     -webkit-text-stroke: 2px #DAD7CD;
+    */
 }
 #location{
 
@@ -50,7 +55,7 @@ p {
 
 }
 #treePic{
-    border-radius: 50%;
+    border-radius: 20%;
     height: auto;
     width: 50%;
 }
