@@ -5,28 +5,51 @@ h2, h3 {
     color: #3A5A40;
     font-family: Dancing Script;
     font-weight: bolder;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 p {
     font-family: Protest Riot;
 }
+.header{
+    background-color: #3A5A40;
+    color: #DAD7CD;
+    animation-name: main;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    font-family: Protest Riot;
+}
+.leahToby{
+    padding-left: 5%;
+    padding-top: 2%;
+    display: inline-block;
+}
+.date{
+    display: inline-block;
+    padding-left: 60%;
+}
 #navbar{
     background-color: #3A5A40;
 }
+@keyframes main{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 #mainPage{
     background-color: #DAD7CD;
-}
-#maps {
-    background-color: #DAD7CD;
-    width: 100%;
-    height: auto;
+    animation-name: main;
+    animation-duration: 2s;
 }
 #leaves {
     width: 50%;
     height: auto;
 }
+
 #invite{
-    position: relative;
     overflow: hidden;
+
 }
 #pic{
     height: auto;
@@ -34,28 +57,39 @@ p {
     border-radius: 20%;
 }
 #overlayText{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #3A5A40;
-    /*
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: #3A5A40;
-    font-size: 5rem;
-    z-index: 1;
-    -webkit-text-stroke: 2px #DAD7CD;
-    */
-}
-#location{
-
-}
-#rsvp{
-
-}
-#thanks{
-
 }
 #treePic{
     border-radius: 20%;
     height: auto;
     width: 50%;
+}
+#countdown{
+    font-size: 1.5rem;
+}
+.kphImage, .churchImage{
+    width: 100%;
+    height: auto;
+    opacity: 30%;
+    border-radius: 5%;
+}
+.party, .church{
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-bottom: 5%;
+
+}
+.partyHead, .churchHead{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.partyLoc, .churchLoc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
