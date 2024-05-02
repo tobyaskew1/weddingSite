@@ -15,10 +15,12 @@
     <title>Save the Date!</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="leahToby">L + T</h1>
-        <p class="date">20/12/25</p>
-    </header>
+    <nav class="navbar sticky-top">
+        <div class="container">
+            <a href="#" class=" leahToby navbar-brand me-0">L+T</a>
+            <span class="date navbar-text me-0 mb-0">31/05/25</span>
+        </div>
+    </nav>
     <div id="mainPage" class="container">
         <div class="text-center" id="invite">
             <div class="row pt-3 g-1">
@@ -35,57 +37,51 @@
                     <img src="/images/wedding.jpg" alt="Wedding" id="pic">
                 </div>
             </div>
-            <p class="fs-3 pt-3">You're invited to our wedding!</p>
-            <h3>Our Story</h3>
+            <h2>You're invited to our wedding!</h2>
+            <img src="images/flowers.png" alt="leaves" id="leaves">
+            <h2>Our Story</h2>
             <p class="ms-md-5 me-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <img src="images/leaves.png" alt="leaves" id="leaves">
-            <h3>Days 'till our wedding</h3>
+            <img src="images/flowers.png" alt="leaves" id="leaves">
+            <h2>Days 'till our wedding</h2>
             <p id="countdown"></p>
         </div>
 
         <div class="text-center pt-3"  id="location">
-            <img src="images/leaves.png" alt="leaves" id="leaves">
+            <img src="images/flowers.png" alt="leaves" id="leaves">
             <h2>Location...</h2>
             <div class="church">
-                <img src="./images/BC.jpg" alt="St Andrew's Church Broughton" class="churchImage">
+                <!--<img src="./images/BC.jpg" alt="St Andrew's Church Broughton" class="churchImage">!-->
                     <h3 class="pt-3 churchHead">The Ceremony</h3>
                     <p class="pt-2 churchLoc">
-                        St Andrew's Church,
-                        64 Church Street, 
-                        Broughton, 
-                        Kettering,
-                        NN14 1LU
+                        St. Peter & St. Paul Church, 1-3 Market Pl, Kettering NN16 0AL
                     </p>
             </div>
             <div class="party">
-                <img src="./images/KPH.jpg" alt="Kettering Park Hotel" class="kphImage">
+                <!--<img src="./images/KPH.jpg" alt="Kettering Park Hotel" class="kphImage">!-->
                     <h3 class="pt-3 partyHead">The after party</h3>
                     <p class="pt-2 partyLoc">
-                        Kettering Park Hotel,
-                        Kettering Parkway,
-                        Kettering,
-                        Northamptonshire,<br>
-                        NN15 6XT
+                        Kettering Golf Club, 
+                        Headlands, Broughton, 
+                        Kettering NN15 6XA
                     </p>
             </div>
         </div>
 
         <div class="text-center" id="rsvp">
             <div class="pt-3">
-                <img src="images/leaves.png" alt="leaves" id="leaves">
+                <img src="images/flowers.png" alt="leaves" id="leaves">
                 <h2>RSVP</h2>
             </div>
             <div class="pt-2">
-                <p>Tell us if you can make it by filling out the below form. <br>You can fill this out for multiple guests at a time. </p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYGc_pvJ-eNmXahgBbE-Sou7WhcSBTagwjhjy3elsebSl74Q/viewform?embedded=true" width="100%" height="720px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
+                <p>Please Enter your name and email address so we can contact you for future updates on the wedding!</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYS-abVlJxGUEuhYx2SMcBCY6j-KGkSDETK2a1nefKMO-p2Q/viewform?embedded=true" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>            </div>
             
 
         </div>
         <div class="text-center" id="thanks">
             <div class="pt-3">
-                <img src="images/leaves.png" alt="leaves" id="leaves">
+                <img src="images/flowers.png" alt="leaves" id="leaves">
                 <h2>Thanks!</h2>
             </div>
             <p class="ms-md-5 me-md-5" id="thanksMessage">Big thanks to everyone who dropped by our wedding website! Your virtual presence means a lot to us. We appreciate the love and support as we get ready to say<br>
@@ -100,29 +96,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-    <script>
-var countDownDate = new Date("Dec 20, 2025 10:00:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "It's our wedding day!";
-  }
-}, 1000);
-    </script>
+    <script src="app.js"></script>
 
 </body>
 </html>
