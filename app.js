@@ -1,4 +1,4 @@
-var countDownDate = new Date("May 31, 2025 10:00:00").getTime();
+var countDownDate = new Date("May 31, 2025 13:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -12,7 +12,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours, "
-  + minutes + " minutes, " + seconds + " seconds ";
+  + minutes + " minutes";
 
   if (distance < 0) {
     clearInterval(x);

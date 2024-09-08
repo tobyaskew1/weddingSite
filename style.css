@@ -13,6 +13,7 @@ h2{
 }
 p {
     font-family: Protest Riot;
+    font-size: 1.25rem;
 }
 .navbar{
 
@@ -88,4 +89,28 @@ p {
     top: 50%;
     left: 50%;
     font-size: 1.25rem;
+}
+footer{
+    text-align: center;
+    border-top: 5px solid #9D7982;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 0;
+}
+.foot-text{
+    padding-top: 5%;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+}
+.colour {
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+}
+.nav-link{
+    text-decoration: none;
+    text-decoration: underline;
+    font-family: Protest Riot;
 }
